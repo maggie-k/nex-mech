@@ -1,0 +1,30 @@
+auto_services_app/
+│
+├── app/
+│   ├── __init__.py
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── home.py           # splash screen + car form
+│   │   ├── services.py       # service categories & subcategories
+│   │   ├── auth.py           # login, signup
+│   │   ├── cart.py           # add-to-cart & checkout
+│   ├── templates/
+│   │   ├── layout.html
+│   │   ├── home.html
+│   │   ├── service_cards.html
+│   │   ├── subcategory.html
+│   │   ├── login.html
+│   │   ├── signup.html
+│   │   └── cart.html
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── js/
+│   │   └── images/
+│   ├── models.py             # DB models (User, Service, Order)
+│   └── forms.py              # WTForms for car form, login, signup
+│
+├── config.py
+├── requirements.txt
+├── run.py
+└── README.md
