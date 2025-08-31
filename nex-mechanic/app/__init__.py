@@ -14,7 +14,7 @@ DB_NAME='database.db'
 def create_app():
 	app= Flask(__name__)
 	app.config.from_object('config')
-	app.config['SECRET_KEY'] = 'neXMeChanic'
+	app.config['SECRET_KEY'] = 'secret'
 	app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
 	app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -54,4 +54,5 @@ def create_app():
 		return UserCarProfile.query.get(int(id))
 
 	return app
+
 
